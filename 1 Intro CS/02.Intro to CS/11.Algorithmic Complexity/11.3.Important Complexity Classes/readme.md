@@ -1,0 +1,6 @@
+- `O(1)` denotes constant running time
+- `O(log n)` denotes logarithmic running time
+- `O(n)` denotes linear running time
+- `O(n log n)` denotes log-linear running time
+- `O(n^k)` denotes polynomial running time. Notice that k is a constant
+- `O(c^n)` denotes exponential running time. Here a costant is being raised to a power based on the size of the input
