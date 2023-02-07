@@ -1,13 +1,4 @@
-from graph import Node, Digraph
-
-
-def print_path(path: [Node]) -> str:
-    result = ''
-    for i in range(len(path)):
-        result += str(path[i])
-        if i != len(path) - 1:
-            result += ' -> '
-    return result
+from graph import Node, Digraph, print_path
 
 
 def dfs(graph: Digraph, start: Node, end: Node, path: [Node], shortest: [Node], to_print: bool = False) -> [Node]:

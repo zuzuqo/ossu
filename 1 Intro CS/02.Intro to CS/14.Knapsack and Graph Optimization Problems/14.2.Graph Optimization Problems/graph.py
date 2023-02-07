@@ -85,3 +85,11 @@ class Graph(Digraph):
         Digraph.add_edge(self, edge)
         rev = Edge(edge.get_destination(), edge.get_source())
         Digraph.add_edge(self, rev)
+
+def print_path(path: [Node]) -> str:
+    result = ''
+    for i in range(len(path)):
+        result += str(path[i])
+        if i != len(path) - 1:
+            result += ' -> '
+    return result

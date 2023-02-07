@@ -1,5 +1,5 @@
 from graph import Node, Edge, Digraph, print_path
-from dfs_algorithm import shortest_path
+from bfs_algorithm import bfs
 
 def test_shortest_path(to_print=False):
     nodes = []
@@ -19,9 +19,9 @@ def test_shortest_path(to_print=False):
     g.add_edge(Edge(nodes[1], nodes[0]))
     g.add_edge(Edge(nodes[3], nodes[1]))
     g.add_edge(Edge(nodes[4], nodes[0]))
-    sp = shortest_path(g, nodes[0], nodes[5], to_print=to_print)
-    print(f'Shortest path found by DFS: {print_path(sp)}')
+    sp = bfs(g, nodes[0], nodes[5], to_print=to_print)
+    print(f'Shortest path found by BFS: {print_path(sp)}')
 
 
 if __name__ == '__main__':
-    test_shortest_path()
+    test_shortest_path(True)
